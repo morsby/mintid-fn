@@ -1,0 +1,6 @@
+language: golang-middleware
+fprocess: ./handler
+welcome_message: |
+  You have created a new function which uses Golang 1.16.
+
+  It defaults to using Go Modules.
