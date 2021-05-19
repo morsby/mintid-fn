@@ -6,12 +6,12 @@ functions:
   mintid:
     lang: golang-middleware
     handler: ./mintid
-    image: morsby/mintid:latest
+    image: repo.treescale.com/morsby/mintid:latest
     build_args:
       TARGETPLATFORM: linux/amd64
       BUIDLPLATFORM: linux/amd64
       TARGETOS: linux
       TARGETARCH: amd64
     secrets:
-      - cpr
-      - pwd
+      - aes
+      - mysql
